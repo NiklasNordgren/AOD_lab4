@@ -52,12 +52,13 @@ public class Sorter {
 
 	private static <T extends Comparable<? super T>> T medianOfThree(T first, T middle, T last) {
 
-		if(first.compareTo(last) >= 0 && first.compareTo(middle) >= 0)
+		if(first.compareTo(last) >= 0 && first.compareTo(middle) <= 0)
 			return first;
-		else if(last.compareTo(first) >= 0 && last.compareTo(middle) >= 0)
+		else if(last.compareTo(first) >= 0 && last.compareTo(middle) <= 0)
 			return last;
 		else
 			return middle;
+		
 	}
 
 }
