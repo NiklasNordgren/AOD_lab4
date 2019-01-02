@@ -15,24 +15,31 @@ public class Sorter<T> {
 		int right = high;
 
 		while(left <= right) {
+			
 			while(list.get(left).compareTo(pivotValue) < 0) {
 				left++;
 			}
+			
 			while(list.get(right).compareTo(pivotValue) > 0) {
 				right--;
 			}
+			
 			if(left <= right) {
 				swap(list, left, right);
 				left++;
 				right--;
 			}
+			
 		}
+		
 		if(low < right) {
 			quickSorter(list, low, right);
 		}
+		
 		if(left < high) {
 			quickSorter(list, left, high);
 		}
+		
 	}
 
 	private static <T extends Comparable<? super T>> void swap(List<T> list, int a, int b) {
@@ -51,7 +58,6 @@ public class Sorter<T> {
 			return last;
 		else
 			return middle;
-
 	}
 
 }
