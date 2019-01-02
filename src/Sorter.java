@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Sorter<T> {
+public class Sorter {
 
 	public static <T extends Comparable<? super T>> void quickSort(List<T> list) {
 

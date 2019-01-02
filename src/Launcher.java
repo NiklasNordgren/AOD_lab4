@@ -6,7 +6,6 @@ public class Launcher {
 		
 		ArrayList<Integer> arrayList = new ArrayList<>();
 		
-		
 		arrayList.add(5);
 		arrayList.add(4);
 		arrayList.add(1337);
