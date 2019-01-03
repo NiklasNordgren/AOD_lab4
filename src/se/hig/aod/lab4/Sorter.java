@@ -1,9 +1,13 @@
 package se.hig.aod.lab4;
+
 import java.util.List;
 
 public class Sorter {
 
 	public static <T extends Comparable<? super T>> void quickSort(List<T> list) {
+		
+		if(list.size() <= 1)
+			return;
 
 		quickSorter(list, 0, list.size() - 1);
 	}
