@@ -1,8 +1,6 @@
 package se.hig.aod.lab4;
 import static org.junit.Assert.*;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.util.ArrayList;
 
 import org.junit.After;
