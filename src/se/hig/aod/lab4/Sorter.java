@@ -29,6 +29,7 @@ public class Sorter {
 			return;
 
 		quickSorter(list, 0, list.size() - 1);
+	
 	}
 
 	/**
@@ -42,10 +43,10 @@ public class Sorter {
 	private static <T extends Comparable<? super T>> void quickSorter(List<T> list, int low, int high) {
 
 		T pivotValue = medianOfThree(list.get(low), list.get(low + (high - low) / 2), list.get(high));
-
+		
 		int left = low;
 		int right = high;
-
+	
 		while(left <= right) {
 			
 			while(list.get(left).compareTo(pivotValue) < 0) {

@@ -8,27 +8,21 @@ public class Launcher {
 		ArrayList<Integer> arrayList = new ArrayList<>();
 		
 		arrayList.add(5);
-		arrayList.add(4);
-		arrayList.add(1337);
-		arrayList.add(1338);
-		arrayList.add(9);
-		arrayList.add(30);
-		arrayList.add(50);
+		arrayList.add(6);
 		arrayList.add(1);
+		arrayList.add(8);
 		arrayList.add(2);
-		arrayList.add(99999999);
-		
-		for (Integer integer : arrayList) {
-			System.out.println(integer);
-		}
+		arrayList.add(3);
+		arrayList.add(4);
 		
 		Sorter.quickSort(arrayList);
+	
+		String string = "";
 		
-		System.out.println("After sort:");
-		for (Integer integer : arrayList) {
-			System.out.println(integer);
-		}
+		for(Integer i : arrayList)
+			string += i + " ";
 		
+		System.out.println(string);
 	}
 
 }
